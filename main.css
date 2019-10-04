@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box; }
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'futura-pt', helvetica, san-serif;
+    font-size: 100%;
+    color: rgba(12, 12, 10, 0.8);
+    font-weight: 400;
+}
+.intro {
+    text-align: center;
+    color: red;
+}
