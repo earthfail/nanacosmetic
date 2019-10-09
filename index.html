@@ -7,10 +7,91 @@
         <meta name="keywords" content="beauty,cosmetics,hair products,women">
         <meta name="author" content="Salim Khatib">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="main.scss" >
         <link rel="icon" type="image/svg+xml" href="resources/img/nana_flower.svg" />
+        <link rel="stylesheet"  href="resources/fontawesome-free-5.11.2-web/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" >
+        <style>
+         a{
+             display:block;
+             color: rgba(125, 42, 208, 0.8);
+             text-decoration: none;
+         }
+         a:hover{
+             color: #d0211f;
+         }
+         header{
+             display:grid;
+             grid-template-columns: minmax(50px,1fr) 2fr 1fr;
+             grid-template-rows: minmax(10%,20%) auto;
+             align-items: center;
+         }
+         #logo{
+             grid-row: span 2;
+             width: 100%;
+             object-fit: contain;
+
+         }
+         #name{
+             margin: auto;
+         }
+         #phone{
+            font-family:  Times,serif;
+            text-transform: uppercase;
+         }
+         nav{
+             grid-column: span 2;
+         }
+         nav ul{
+             display:flex;
+             flex-wrap: wrap;
+             list-style-type: none;
+             text-transform: uppercase;
+         }
+         nav li{
+             border-right: 1px solid #000;
+             text-align:center;
+             padding:0 1.20rem;
+             line-height: 0.75rem;
+             margin-bottom: 0.2rem;
+         }
+         nav li:last-child{
+             border-right: none;
+         }
+         nav li:nth-child(4n+1):hover a{
+             color: #e62328;
+         }
+         nav li:nth-child(4n+2):hover a{
+             color: #ec2179;
+         }
+         nav li:nth-child(4n+3):hover a{
+             color: #f69182;
+         }
+         nav li:nth-child(4n+0):hover a{
+             color: #ef5198;
+         }
+        </style>
     </head>
     <body>
-
+        <header>
+            <img id="logo" src="resources/img/nana_face.svg" alt="cool logo" />
+            <img id="name" src="resources/img/nana_namestylied.svg" alt="nana cosmetic" />
+            <p id="phone" >call us: 0509587865</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#">store </a>
+                    </li>
+                    <li>
+                        <a href="#>products</a>
+                    </li>
+                                 <li>
+                                 <a href="#>about us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </body>
 </html>
